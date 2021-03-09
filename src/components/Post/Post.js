@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router';
+import { Button, Card } from 'react-bootstrap';
 
 const Post = (props)=> {
     console.log(props.post);
@@ -11,11 +12,18 @@ const Post = (props)=> {
     }
     return (
         <div>
-            <p>PostId: {id}</p>
-            <p><b>Title:</b> {title} </p>
-            <p><b>Post: </b>{body}</p>
-        
-            <button onClick={()=> showComments(id)}>Show Comments</button>
+
+            <Card style={{ width: '18rem' }}>
+                <Card.Body>
+                    <Card.Title>{title}</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">Post ID:{id}</Card.Subtitle>
+                    <Card.Text>
+                         {body}
+                    </Card.Text>
+                    <Button onClick={()=> showComments(id)} variant="info">Show Comment</Button> 
+                </Card.Body>
+            </Card>
+
         </div>
     );
 };

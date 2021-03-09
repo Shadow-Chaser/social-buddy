@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import {Row } from 'react-bootstrap';
 import Post from '../Post/Post';
 
 const Home = () => {
@@ -10,13 +11,15 @@ const Home = () => {
         .then(data => setPosts(data))
     },[])
     return (
-        <div>
+        <div >
             <h1>This is home</h1>
             <h3>Total Post: {posts.length}</h3>
 
-            {
-                posts.map(post => <Post post={post}></Post>)
-            }
+            <Row className="d-flex justify-content-center">
+                {
+                    posts.map(post => <Post post={post}></Post>)
+                }
+            </Row>
 
         </div>
     );

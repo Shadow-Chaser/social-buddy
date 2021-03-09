@@ -9,9 +9,9 @@ const PostDetail = () => {
         fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`)
         .then(res => res.json())
         .then(data => setPostDetails(data))
-    },[])
+    },[id])
     return (
-        <div>
+        <div >
             <h1>Post Details of id {id}</h1>
 
             {
