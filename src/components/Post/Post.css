@@ -1,0 +1,12 @@
+.comment-button{
+    position: absolute;
+    bottom: 13px;
+    right: 4.5rem;
+    
+}
+
+.post-card{
+    box-shadow: 7px 7px 12px gray;
+    border-radius: 10px;
+    
+}

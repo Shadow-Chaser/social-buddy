@@ -12,8 +12,7 @@ const Home = () => {
     },[])
     return (
         <div >
-            <h1>This is home</h1>
-            <h3>Total Post: {posts.length}</h3>
+            <h3 className='text-center'>Total Post: {posts.length}</h3>
 
             <Row className="d-flex justify-content-center">
                 {

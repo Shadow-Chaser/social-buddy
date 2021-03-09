@@ -12,7 +12,7 @@ const PostDetail = () => {
     },[id])
     return (
         <div >
-            <h1>Post Details of id {id}</h1>
+            <h1 className='text-center'>Post Details of id {id}</h1>
 
             {
                 postDetails.map(postDetail => <Comment postDetail = {postDetail}></Comment>)

@@ -11,10 +11,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
-
-  
-
+    <div>
       <Router>
       <div>
         <Navbar bg="info" variant="dark">

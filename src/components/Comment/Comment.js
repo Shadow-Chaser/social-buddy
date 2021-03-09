@@ -1,12 +1,18 @@
 import React from 'react';
+import { ListGroup } from 'react-bootstrap';
 
 const Comment = (props) => {
     const {name,email,body} = props.postDetail;
     return (
         <div>
-            <h3>Name: {name}</h3>
-            <p><b>Email: </b>{email}</p>
-            <p><b>Comment: </b>{body}</p>
+ 
+            <ListGroup className="m-5">
+                <ListGroup.Item>Name: {name}</ListGroup.Item>
+                <ListGroup.Item>Email: {email}</ListGroup.Item>
+                <ListGroup.Item>Comment: {body}</ListGroup.Item>
+               
+            </ListGroup>
+
         </div>
     );
 };
